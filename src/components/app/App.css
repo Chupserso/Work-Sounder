@@ -1,0 +1,104 @@
+* {
+    user-select: none
+}
+body {
+    background: rgb(20, 20, 20);
+}
+.header {
+    max-width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 50px;
+}
+.header__logo {
+    width: 50px;
+    height: 50px;
+}
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+.header__title {
+    margin-left: 10px;
+}
+.header__title h1 {
+    color: #fff;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 40px;
+}
+.logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    animation-duration: 0.5s;
+    animation-name: logo;
+}
+@keyframes logo {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        width: 160px;
+        height: 150px;
+    }
+}
+.sounds {
+    cursor: pointer;
+    width: 1110px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.sound {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    background: rgb(12, 12, 12);
+    transition: 0.5s all;
+}
+.sound:hover {
+    padding: 50px;
+    background: rgb(9, 9, 9);
+}
+.title {
+    margin-top: 30px;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #1dbfe3, #eaff00);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 250px;
+}
+@media screen and (max-width:1366px) {
+    .sound:hover {
+        padding: 40px;
+    }
+}
+@media screen and (max-width:510px) {
+    .header {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .header__logo {
+        width: 60px;
+        height: 60px;
+    }
+}
