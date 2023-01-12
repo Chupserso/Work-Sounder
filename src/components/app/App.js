@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import playImage from "../../resources/img/play.png";
 import AppHeader from "../app-header/AppHeader";
 import AppSounds from "../app-sounds/AppSounds";
 import dayForestImg from "../../resources/img/dayForest.jpg";
@@ -15,6 +14,7 @@ import oceanImg from "../../resources/img/ocean.jpg";
 import oceanSound from "../../resources/sounds/ocean.mp3";
 import stormImg from "../../resources/img/storm.jpg";
 import stormSound from "../../resources/sounds/storm.mp3";
+import playImage from "../../resources/img/play.png";
 
 const App = () => {
     const [state, setState] = useState({
