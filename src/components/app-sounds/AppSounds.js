@@ -4,7 +4,7 @@ const AppSounds = (props) => {
     const data = props.data;
     const items = data.map(item => {
         return (
-            <AppSoundsItem imageUrl={item.imgUrl} title={item.title} soundUrl={item.soundUrl} />
+            <AppSoundsItem playImage={props.playImage} imageUrl={item.imgUrl} title={item.title} soundUrl={item.soundUrl} key={item.key} />
         );
     });
 

@@ -1,9 +1,4 @@
 import { Component } from "react";
-import playImage from "../../resources/img/play.png";
-
-const Image = () => {
-    return <img src={playImage} />;
-}
 
 class AppSoundsItem extends Component {
     constructor (props) {
@@ -25,7 +20,7 @@ class AppSoundsItem extends Component {
     }
 
     render () {
-        const image = this.state.play ? <Image /> : null;
+        const image = this.state.play ? <img src={this.props.playImage} /> : null;
 
         if (this.state.play) {
             this.audio.play();
